@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src="js/LoginValidate.js"></script>
+<link type="text/css" rel="stylesheet" href="css/login.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<meta charset="ISO-8859-1">
+<title>Login to Horizon Airways</title>
+</head>
+<body background=b.jpg>
+<form>
+<script>
+function goBack() {
+    window.history.back()
+}
+</script>
+</form>
+	<table width="100%">
+	<i class="fa fa-chevron-circle-left" type="button" value="Go back!" style="font-size:26px" onclick="history.back()" ></i>
+	
+		<tr height="40px" id="img1">
+			<th><center>
+					<img src="logo_new.PNG" height="122" width="642">
+				</center></th>
+		</tr>
+		<tr id="img2">
+			<th><div class="topnav">
+
+					<a href="Search.jsp" style="color:white; background-color:gray ;">Home</a> 
+					<a href="SignNew.html" style="color:white; background-color:gray ;">Register</a>
+					<a class="active" href="Login.html" style="color:white; background-color:gray ;">Login</a> 
+					
+				</div> <br> <br> <br> <br>
+				<form name="frmLogin" action="LoginServlet" method="post"
+					onsubmit="return doValidate()">
+				
+						<center>
+							<br>
+							<table border="3">
+
+								<tr align="center">
+									<th colspan="2"><font size="4px"> Login </font> <br /> <br /></th>
+								</tr>
+								<tr id="p1">
+									<th><font color="black" size="3px"> E-mail: </font></th>
+									<td>&nbsp;&nbsp;&nbsp;&nbsp;<input type="email"
+										name="email" placeholder="E-mail Id" required="required"
+										style="width: 80%; display: inline-block; border: 1px solid #ccc; box-sizing: border-box;" />
+										&nbsp;&nbsp;&nbsp;
+									</td>
+									<td><span id="errEmail" style="color: red;"></span></td>
+								</tr>
+								<br>
+								
+								<tr id="p2">
+									<th><font color="black" size="3px"> Password: </font></th>
+									<td>&nbsp;&nbsp;&nbsp;&nbsp;<input type="password"
+										name="password" placeholder=" Enter Password" required="required"
+										style="width: 80%;  display: inline-block; border: 1px solid #ccc; box-sizing: border-box;" />
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+									</td>
+				<td><span id="errPassword" style="color: red;"></span></td>
+								</tr>
+								
+								&nbsp;&nbsp;
+								<tr align="center">
+									<th colspan="2"><button id="button" type="submit"
+											style="background-color: #4CAF50; color: white; padding: 10px 10px; margin: 4px 0; border: none; cursor: pointer; width: 20%; opacity: 0.8;">
+											<b>Login</b>
+
+										</button></th>
+
+								</tr>
+								
+								
+								
+								<tr>
+									<td colspan="2">
+										<center>
+											<span id="result" style=" color: red; visibility: hidden">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;No such account exsists.<br>Please Register</span>
+										</center>
+									</td>
+								</tr>
+							</table>
+							<br>
+
+
+						</center>
+						<br> <br><br><br>
+
+					
+				</form> <br>
+				<center>
+				<img src="iconimage1.png" height="200" width="200"/>
+				</center> <br> <br> <br> <br> <br>
+				<br> <br> <br> <br> <br> <br> <br><br> <br> <br> <br> <br> <br> <br>
+				<br> <br> <br> <br> <br> <br> <br>
+</body>
+</html>
